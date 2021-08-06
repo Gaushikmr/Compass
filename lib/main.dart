@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         return Column(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 15, right: 15),
+              margin: EdgeInsets.only(left: 15, right: 15, top: 15),
               padding: EdgeInsets.all(5.0),
               alignment: Alignment.center,
               decoration: BoxDecoration(
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 "$ang",
                 style: TextStyle(
                   color: Color(0xFFA72F2F),
-                  fontSize: 56,
+                  fontSize: 50,
                 ),
               ),
             ),
