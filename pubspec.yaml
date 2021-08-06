@@ -10,6 +10,7 @@ environment:
 
 dependencies:
   flutter_compass: ^0.5.1
+  location: ^4.2.0
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.1

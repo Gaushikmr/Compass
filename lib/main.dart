@@ -2,6 +2,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_compass/flutter_compass.dart';
 
+import 'location_widget.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -36,7 +38,12 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Builder(builder: (context) {
           return Column(
             children: <Widget>[
-              Expanded(child: _buildCompass()),
+              Expanded(
+                  flex: 4,
+                  child: _buildCompass()),
+              Expanded(
+                  flex: 2,
+                  child: LocationWidget())
             ],
           );
         }),
