@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
           );
 
         int ang = (direction.round());
-        return Stack(
+        return Column(
           children: [
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
@@ -103,20 +103,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            Positioned(
-              // center of the screen - half the width of the rectangle
-              left: (width / 2) - ((width / 80) / 2),
-              // height - width is the non compass vertical space, half of that
-              top: (height - width) / 2,
-              child: SizedBox(
-                width: width / 80,
-                height: width / 10,
-                child: Container(
-                  //color: HSLColor.fromAHSL(0.85, 0, 0, 0.05).toColor(),
-                  color: Color(0xBBF80D0D),
-                ),
-              ),
-            ),
+            // Positioned(
+            //   // center of the screen - half the width of the rectangle
+            //   left: (width / 2) - ((width / 80) / 2),
+            //   // height - width is the non compass vertical space, half of that
+            //   top: (height - width) / 2,
+            //   child: SizedBox(
+            //     width: width / 80,
+            //     height: width / 10,
+            //     child: Container(
+            //       //color: HSLColor.fromAHSL(0.85, 0, 0, 0.05).toColor(),
+            //       color: Color(0xBBF80D0D),
+            //     ),
+            //   ),
+            // ),
           ],
         );
       },
